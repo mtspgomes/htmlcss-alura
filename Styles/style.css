@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --main-color: #000000; 
+    --text-color: #f6f6f6;
+    --text-color-destaque: #22d4fd;
+    --hover-color: #272727;
+    --font-title: "Krona One", sans-serif;
+    --font-body: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 90vh; */
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_link {
+    color: #22D4FD;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.titulo-destaque {
+    color: var(--text-color-destaque);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao-img {
+    width: 50%;
+}
+
+.content-main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-main-title {
+    font-size: 2.25rem;
+    font-family: var(--font-title);
+}
+
+.content-main-paragraph {
+    font-size: 1.5rem;
+    font-family: var(--font-body);
+}
+
+.content-socialmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.content-socialmedia-subtitle {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.content-socialmedia2 {
+    /*background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-weight: 600;
+    border: 2px solid var(--text-color-destaque);
+    border-radius: 8px;
+}
+
+.content-socialmedia2:hover{
+    background-color: var(--hover-color);
+}
+
+.footer {
+    color: var(--main-color);
+    background-color: var(--text-color-destaque);
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    padding: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .content-main {
+        width: auto;
+    }
+   
+}
